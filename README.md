@@ -15,7 +15,7 @@ Build a React Native app using your favorite boilerplate or seed (or from scratc
 
 7. Upload to a code sharing service such as GitHub, Gitlab, etc. and let us know where to find it.
 
-reqres.in
+- reqres.in(api)
 
 ## How to run:
 1. Clone repo

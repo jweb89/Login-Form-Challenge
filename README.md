@@ -1,4 +1,4 @@
-Prompt:
+## Prompt:
 Build a React Native app using your favorite boilerplate or seed (or from scratch), that consists of a login form that sends a login REST post request to this stubbed REST service: https://reqres.in You are free to use whatever tooling you want and whatever libraries you feel best solves the problem. Bonus points if the form looks sharp.
 
 1. The login form should have an email input and a password input.
@@ -17,14 +17,35 @@ Build a React Native app using your favorite boilerplate or seed (or from scratc
 
 reqres.in
 
-How to run:
-open up terminal and run "npm install" and then "npm start" you should be given a qr code to scan
-and run on your phone(you will need to download expo from the app store) or you can run it on an emulator
+## How to run:
+1. Clone repo
 
-How to test: Run "npm test" this does watch for saves. To stop testing use CTRL+C on the terminal
+2. run "npm install"
 
-Form validates that the email is in the correct format and there is at least 1 character in the password field
+3. "npm start" you should be given a qr code to scan
 
-To login succesfully and be navigated to Login success screen please use:
-"email": "eve.holt@reqres.in",
-"password": "cityslicka"
+4. scan qr code or run on emulator(if scanning qr code you will need to download expo on your device)
+
+5. run "npm test" - To stop testing use CTRL+C on the terminal
+
+## Dependecnies and choices
+
+1. Expo template
+
+2. react-native-elements 
+- used for nice looking inputs
+
+3. react-native-paper
+- used for buttons 
+
+4. Jest/testing-library/react-native
+
+5. Wrote Form.test.js to test the entire form. The test determines if the form inputs are valid and checks against the styling of the submit button to verify it is appropriately enabled or disabled. I could have extracted the validation logic into a function and simply tested the function based on inputs, but I decided to test the entire form to be more thorough. For example if somehow the submit button disabled prop was modified the tests would still pass if it were just a function. Whereas testing against the button styling would solve that problem and the tests would fail.
+
+
+
+## Notes
+- Form validates email format and requires that there is at least 1 character in password before the button is enabled
+- To login succesfully and be navigated to Login success screen please use:
+"eve.holt@reqres.in",
+"cityslicka"

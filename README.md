@@ -40,7 +40,9 @@ Build a React Native app using your favorite boilerplate or seed (or from scratc
 
 4. Jest/testing-library/react-native
 
-5. Wrote Form.test.js to test the entire form. The test determines if the form inputs are valid and checks against the styling of the submit button to verify it is appropriately enabled or disabled. I could have extracted the validation logic into a function and simply tested the function based on inputs, but I decided to test the entire form to be more thorough. For example if somehow the submit button disabled prop was modified the tests would still pass if it were just a function. Whereas testing against the button styling would solve that problem and the tests would fail.
+5. Eslint dev dependencies for formatting and linting
+
+6. Wrote Form.test.js to test the entire form. The test determines if the form inputs are valid and checks against the styling of the submit button to verify it is appropriately enabled or disabled. I could have extracted the validation logic into a function and simply tested the function based on inputs, but I decided to test the entire form to be more thorough. For example if somehow the submit button disabled prop was modified the tests would still pass if it were just a function. Whereas testing against the button styling would solve that problem and the tests would fail.
 
 
 

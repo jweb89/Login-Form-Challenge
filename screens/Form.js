@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFF3E2',
     alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'center',
   },
   inputContainer: {
     width: '80%',
@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     width: '75%',
     marginBottom: '-5%',
+    marginTop: '10%',
   },
   header: {
     marginVertical: '10%',

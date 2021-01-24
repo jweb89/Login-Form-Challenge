@@ -42,6 +42,7 @@ const Form = ({ navigation }) => {
           placeholder="Email"
           value={email}
           onChangeText={setEmail}
+          autoCapitalize="none"
         />
         <Input
           style={styles.password}

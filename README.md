@@ -22,7 +22,7 @@ Build a React Native app using your favorite boilerplate or seed (or from scratc
 
 2. run "npm install"
 
-3. "npm start" you should be given a qr code to scan
+3. run "npm start" you should be given a qr code to scan
 
 4. scan qr code or run on emulator(if scanning qr code you will need to download expo on your device)
 
@@ -49,5 +49,5 @@ Build a React Native app using your favorite boilerplate or seed (or from scratc
 ## Notes
 - Form validates email format and requires that there is at least 1 character in password before the button is enabled
 - To login succesfully and be navigated to Login success screen please use:
-"eve.holt@reqres.in",
-"cityslicka"
+"eve.holt@reqres.in"
+at least one character as password

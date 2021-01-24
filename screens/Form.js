@@ -8,8 +8,8 @@ import Prokeep from '../Prokeep.png';
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 const Form = ({ navigation }) => {
-  const [email, setEmail] = useState('eve.holt@reqres.in');
-  const [password, setPassword] = useState('cityslicka');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const [error, setError] = useState('');
 
@@ -20,7 +20,10 @@ const Form = ({ navigation }) => {
         password,
       });
       navigation.navigate('success', { token: response.data.token });
+      // Cleans state on navigate
       setError('');
+      setEmail('');
+      setPassword('');
     } catch (e) {
       setError('Invalid Credentials');
     }

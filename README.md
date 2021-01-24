@@ -26,7 +26,7 @@ Build a React Native app using your favorite boilerplate or seed (or from scratc
 
 4. scan qr code or run on emulator(if scanning qr code you will need to download expo on your device)
 
-5. run "npm test" - To stop testing use CTRL+C on the terminal
+5. To test form run "npm test" - To stop testing use CTRL+C on the terminal
 
 ## Dependecnies and choices
 
@@ -49,5 +49,5 @@ Build a React Native app using your favorite boilerplate or seed (or from scratc
 ## Notes
 - Form validates email format and requires that there is at least 1 character in password before the button is enabled
 - To login succesfully and be navigated to Login success screen please use:
-"eve.holt@reqres.in"
-at least one character as password
+- "eve.holt@reqres.in"
+- at least one character as password
